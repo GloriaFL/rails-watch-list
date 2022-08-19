@@ -1,6 +1,16 @@
-<h3>Create a new list</h3>
-<%= simple_form_for @list do |f| %>
-  <%= f.input :name, placeholder: 'Drama' %>
-  <%= f.submit class: 'btn btn-flat' %>
-<% end %>
-<button type="button" class="btn btn-cancel" data-bs-dismiss="modal">Back</button>
+
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md-6 offset-lg-3">
+      <div class="bg-white rounded p-3 shadow">
+        <h3>Create a new list</h3>
+        <%= simple_form_for @list do |f| %>
+          <%= f.input :name, placeholder: 'Drama' %>
+          <%= f.submit class: 'btn btn-flat' %>
+        <% end %>
+        <br>
+        <%= link_to "Back", lists_path(@list), class: "btn btn-cancel" %>
+      </div>
+    </div>
+  </div>
+</div>
