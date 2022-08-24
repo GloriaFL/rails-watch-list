@@ -1,11 +1,20 @@
-.banner_image {
-  height: 150px;
-}
+//.banner_image {
+
+
 
 .banner {
-  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  //overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 
 .h1 {
   font-weight: bold;
+  color:black
 }
